@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import json
@@ -25,17 +24,17 @@ st.set_page_config(
 # Custom Cs for Styling
 st.markdown(""" 
 <style>
-        .main.header {
+    .main-header {
         font_size: 3rem  !important;
-        color : #1E3ABA;
+        color : #1E3A8A;
         font_weight: 700;
         margin-bottom: 1rem ;
         text-align: center;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);    
     }
     
-    .sub_header {
-        font-size: 1.Brem !important;
+    .sub-header {
+        font-size: 1.8rem !important;
         color: 3B82F6;
         font-weight: 600;
         margin-top: 1rem;
@@ -47,7 +46,7 @@ st.markdown("""
         border-left: 5px solid #10B981;
         border-radius: 0.375rem;
     }        
-    .warning-{
+    .warning-message {
         padding: 1rem;
         background-color: #FEF3C7;
         border-left: 5px solid #F59E0B;
@@ -63,7 +62,7 @@ st.markdown("""
     }
     
     
-    .book-card-hover{
+    .book-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
     }
@@ -77,7 +76,7 @@ st.markdown("""
         font-size: 0.875rem;
         font-weight : 600;
     }
-    .unread-badge{
+    .unread-badge {
         background-color: #F87171;
         color: white;
         padding: 0.25rem 0.75rem;
