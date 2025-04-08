@@ -237,8 +237,8 @@ def create_visulations(stats):
         
         fig_read_status.update_layout(
                 title_text = "Read vs Unread Books" ,
-                showlegend = True
-                height = 400
+                showlegend = True,
+                height = 400,
             )
         st.plotly_chart(fig_read_status , use_container_width = True)
             
